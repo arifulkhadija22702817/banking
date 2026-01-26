@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+main {
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e0dbdb;
+    border-radius: 25px;
+    border: 2px solid #000;
+}
+
+/* Balance */
+.money {
+    text-align: center;
+    background-color: #f7f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.money h1 {
+    font-size: 32px;
+}
+
+.money p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add {
+    background-color: green;
+}
+
+.out {
+    background-color: red;
+}
+
+/* Forms */
+#formBox,
+#form {
+    display: none;
+    margin-top: 20px;
+}
+
+fieldset {
+    border-radius: 15px;
+    padding: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.submit {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    main {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    .money h1 {
+        font-size: 40px;
+    }
+}

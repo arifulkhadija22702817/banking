@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Money</title>
+    <link rel="stylesheet" href="style/money.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="money" id="account-balance">
+            <h1 id="balance">10000</h1>
+            <p>Current Balance</p>
+        </div>
+
+        <div class="button">
+            <button class="add" id="addMoneyBtn">Add Money</button>
+            <button class="out" id="cash">Cash Out</button>
+        </div>
+        <form action="">
+            <fieldset id="formBox">
+                <legend>Transaction</legend>
+
+                <label>Amount</label>
+                <input type="number" placeholder="Enter amount" id="inputAmount" required>
+
+                <label>Pin</label>
+                <input type="password" placeholder="Enter pin" id="inputPin" required>
+
+                <button type="button" class="submit" id="submitBtn">Add Money</button>
+            </fieldset>
+        </form>
+
+
+        <form action="">
+            <fieldset id="form">
+                <legend>Transaction</legend>
+
+                <label>Agent Number</label>
+                <input type="number" placeholder="Enter agent number" id="inputNumber" required>
+                <label>Amount</label>
+                <input type="number" placeholder="Enter amount" id="cashOutAmount" required>
+
+                <label>Pin</label>
+                <input type="password" placeholder="Enter pin" id="cashOutPin" required>
+
+                <button type="button" class="submit" id="cashOutBtn">Cash Out</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <script src="style/js/money.js"></script>
+
+
+</body>
+
+</html>
