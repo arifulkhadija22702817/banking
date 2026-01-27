@@ -18,35 +18,37 @@
             </div>
             <div class="flex flex-col justify-start items-center pt-5 gap-5 h-full overflow-hidden">
                 <div class="flex flex-col justify-center items-center w-[220px] shadow-lg bg-slate-50 p-3 rounded-xl">
-                    <h2 class="text-3xl font-bold">20000</h2>
+                    <h2 id="balance" class="text-3xl font-bold">20000</h2>
                     <p class="text-xs">Available balance</p>
                 </div>
-                <div class="flex gap-5">
-                    <button
-                        class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Add
-                        Money</button>
-                    <button
-                        class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Cash
-                        Out</button>
-                </div>
-                <div class="flex items-center justify-center px-2 h-full m-2">
-                    <form class="shadow-2xl bg-white p-4 rounded-xl space-y-3">
-                        <label class="text-xl font-semibold" for="number">Phone Number :</label>
-                        <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="text"
-                            name="num" id="number" placeholder="Enter your number">
-                        <label class="text-xl font-semibold" for="pin">Pin :</label>
-                        <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="password"
-                            name="pass" id="pin" placeholder="Enter your pin">
-                        <a class="text-sm" href="">Forgot Password</a>
-                        <button id="btn_login"
-                            class=" border border-2-black rounded-md p-1 w-full mt-5 bg-gradient-to-r from-[#e100ff] via-[#8e56e9] to-[#830ff6] text-xl font-bold transition-all duration-150 active:scale-90"
-                            type="submit">Login</button>
-                    </form>
+                <div class="mt-15">
+                    <div class="flex justify-center gap-5 ">
+                        <button
+                            class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Add
+                            Money</button>
+                        <button
+                            class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Cash
+                            Out</button>
+                    </div>
+                    <div class="flex items-center justify-center px-2 h-full m-2">
+                        <form id="form" class="shadow-2xl bg-white p-4 rounded-xl space-y-3">
+                            <label class="text-xl font-semibold" for="number">Amount Tk :</label>
+                            <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="number"
+                                name="num" id="add_money" placeholder="Enter ammount tk">
+                            <label class="text-xl font-semibold" for="pin">Pin :</label>
+                            <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="password"
+                                name="pass" id="add_pin" placeholder="Enter your pin">
+                            <a class="text-sm" href="">Forgot Password</a>
+                            <button id="btn_login"
+                                class=" border border-2-black rounded-md p-1 w-full mt-5 bg-gradient-to-r from-[#e100ff] via-[#8e56e9] to-[#830ff6] text-xl font-bold transition-all duration-150 active:scale-90"
+                                type="submit">Add Money</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="/payoo/js/home.js"></script>
 </body>
 
 </html>
