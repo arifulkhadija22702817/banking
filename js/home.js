@@ -12,7 +12,7 @@ form.addEventListener('submit', function (e) {
     const pin = document.getElementById('add_pin').value;
     const ammount = document.getElementById('balance').innerText;
     const ammountTk = parseFloat(ammount);
-    if (pin === '12345') {
+    if (pin === '123456789') {
         const newBalance = ammountTk + blc;
         document.getElementById('balance').innerText = newBalance
 
@@ -23,3 +23,20 @@ form.addEventListener('submit', function (e) {
     }
 
 })
+
+
+
+
+
+const add_pin = document.getElementById('add_pin');
+const togglePin = document.getElementById('togglePin');
+
+togglePin.onclick = function () {
+    if (add_pin.type === 'password') {
+        add_pin.type = 'text';
+        togglePin.innerHTML = '<i class="fa-solid fa-eye"></i>';
+    } else {
+        add_pin.type = 'password';
+        togglePin.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+    }
+};
