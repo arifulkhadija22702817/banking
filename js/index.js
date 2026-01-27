@@ -11,7 +11,7 @@ form.addEventListener("submit", function (e) {
     const phoneNumber = document.getElementById('number').value;
     const pinNumber = document.getElementById('pin').value;
     if (phoneNumber === '01336134504' && pinNumber === '123456789') {
-        window.location.href = './home page/home.html'
+        window.location.href = './home.html'
     }
     else {
         alert('you are wrong enter phone number or pin number');
