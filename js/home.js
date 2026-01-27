@@ -28,15 +28,15 @@ form.addEventListener('submit', function (e) {
 
 
 
-const add_pin = document.getElementById('add_pin');
+const pin = document.getElementById('add_pin');
 const togglePin = document.getElementById('togglePin');
 
 togglePin.onclick = function () {
-    if (add_pin.type === 'password') {
-        add_pin.type = 'text';
+    if (pin.type === 'password') {
+        pin.type = 'text';
         togglePin.innerHTML = '<i class="fa-solid fa-eye"></i>';
     } else {
-        add_pin.type = 'password';
+        pin.type = 'password';
         togglePin.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
     }
 };
