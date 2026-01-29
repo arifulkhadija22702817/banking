@@ -9,9 +9,6 @@
     <script src="https://kit.fontawesome.com/04aba14f9b.js" crossorigin="anonymous"></script>
     <title>home page</title>
 
-
-</head>
-
 <body class="min-h-screen flex items-center ">
     <div class="w-[360px] h-[660px] border-8 border-indigo-600 rounded-4xl mx-auto
     bg-gray-200">
@@ -24,13 +21,15 @@
                     <p class="text-xs">Available balance</p>
                 </div>
                 <div class="mt-15">
-                    <div class="flex justify-center gap-5 ">
+                    <div class="flex justify-center gap-2">
                         <button id="money-add"
                             class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Add
                             Money</button>
                         <button id="cash_Out"
                             class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Cash
                             Out</button>
+                        <button id="transaction-btn"
+                            class=" w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Transaction</button>
                     </div>
                     <!-- add money start -->
                     <div id="moneyAdd" class="hidden flex items-center justify-center px-2 h-full m-2">
@@ -80,6 +79,15 @@
                         </form>
                     </div>
                     <!-- cash out end -->
+
+                    <!-- transaction start -->
+
+                    <div id="transaction" class="hidden px-2  m-2 shadow-2xl bg-white p-4 rounded-xl">
+                        <form id="cash_out_form" class="">
+                            <h1 class="font-bold text-2xl">Transaction:</h1>
+                        </form>
+                    </div>
+                    <!-- transaction end -->
                 </div>
             </div>
         </div>
@@ -87,6 +95,7 @@
     <script src="./js/home.js"></script>
     <script src="./js/cash_out.js"></script>
     <script src="./js/features.js"></script>
+    <script src="./js/transaction.js"></script>
 </body>
 
 </html>

@@ -28,6 +28,11 @@ cashForm.addEventListener('submit', function (e) {
         document.getElementById('balance').innerText = newBalance;
 
         cashForm.reset();
+
+        const para = document.createElement('para');
+        para.innerText = `Cash Out: ${cashNumber} Tk. Balance: ${newBalance}`;
+        document.getElementById('transaction').appendChild(para);
+
     }
     else {
         alert('Cash out failed.Please try again')

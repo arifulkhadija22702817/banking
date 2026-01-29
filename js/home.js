@@ -17,6 +17,11 @@ form.addEventListener('submit', function (e) {
         document.getElementById('balance').innerText = newBalance
 
         form.reset();
+        const p = document.createElement('p');
+        p.innerText = `Added: ${blc} TK. Balance: ${newBalance}`;
+
+
+        document.getElementById('transaction').appendChild(p)
     }
     else {
         alert('add money failed.please try again');
