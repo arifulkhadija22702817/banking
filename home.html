@@ -32,7 +32,8 @@
                             class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Cash
                             Out</button>
                     </div>
-                    <div class="flex items-center justify-center px-2 h-full m-2">
+                    <!-- add money start -->
+                    <div class="hidden flex items-center justify-center px-2 h-full m-2">
                         <form id="form" class="shadow-2xl bg-white p-4 rounded-xl space-y-3">
                             <label class="text-xl font-semibold" for="number">Amount Tk :</label>
                             <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="number"
@@ -53,11 +54,38 @@
                                 type="submit">Add Money</button>
                         </form>
                     </div>
+                    <!-- add money end -->
+
+
+                    <!-- cash out start -->
+                    <div class="flex items-center justify-center px-2 h-full m-2">
+                        <form id="cash_out_form" class="shadow-2xl bg-white p-4 rounded-xl space-y-3">
+                            <label class="text-xl font-semibold" for="number">Amount Tk :</label>
+                            <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="number"
+                                name="cash_out" id="cash_out" placeholder="Enter ammount tk">
+                            <label class="text-xl font-semibold" for="cash_out_pin">Pin :</label>
+                            <div class="relative">
+                                <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required
+                                    type="password" name="cash_out_pin" id="cash_out_pin" placeholder="Enter your pin">
+                                <span id="tPin" class=" absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer
+                                 text-gray-800">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                </span>
+                            </div>
+
+                            <a class="text-sm" href="">Forgot Password</a>
+                            <button id="cash_out_btn"
+                                class=" border border-2-black rounded-md p-1 w-full mt-5 bg-gradient-to-r from-[#e100ff] via-[#8e56e9] to-[#830ff6] text-xl font-bold transition-all duration-150 active:scale-90"
+                                type="submit">Cash Out</button>
+                        </form>
+                    </div>
+                    <!-- cash out end -->
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/home.js"></script>
+    <script src="./js/cash_out.js"></script>
 </body>
 
 </html>
