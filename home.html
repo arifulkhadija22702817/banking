@@ -25,15 +25,15 @@
                 </div>
                 <div class="mt-15">
                     <div class="flex justify-center gap-5 ">
-                        <button
+                        <button id="money-add"
                             class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Add
                             Money</button>
-                        <button
+                        <button id="cash_Out"
                             class="w-[100px] bg-gradient-to-r from-[#830ff6] via-[#8e56e9] to-[#e100ff] p-1 rounded-xl transition-all duration-150 active:scale-90">Cash
                             Out</button>
                     </div>
                     <!-- add money start -->
-                    <div class="hidden flex items-center justify-center px-2 h-full m-2">
+                    <div id="moneyAdd" class="hidden flex items-center justify-center px-2 h-full m-2">
                         <form id="form" class="shadow-2xl bg-white p-4 rounded-xl space-y-3">
                             <label class="text-xl font-semibold" for="number">Amount Tk :</label>
                             <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="number"
@@ -58,7 +58,7 @@
 
 
                     <!-- cash out start -->
-                    <div class="flex items-center justify-center px-2 h-full m-2">
+                    <div id="cashOut" class="hidden flex items-center justify-center px-2 h-full m-2">
                         <form id="cash_out_form" class="shadow-2xl bg-white p-4 rounded-xl space-y-3">
                             <label class="text-xl font-semibold" for="number">Amount Tk :</label>
                             <input class="p-1 mt-2 w-full bg-purple-400 font-bold rounded-xl" required type="number"
@@ -86,6 +86,7 @@
     </div>
     <script src="./js/home.js"></script>
     <script src="./js/cash_out.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 
 </html>
